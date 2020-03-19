@@ -1,0 +1,10 @@
+all: comp run
+comp:main.cpp
+	clear
+	@g++ main.cpp -std=c++11 -o smd
+ 
+run:
+	@./smd
+	@ctags -R .
+clean:
+	rm smd 

@@ -1,0 +1,1 @@
+vector.dep vector.o: vector.cpp vector.hpp

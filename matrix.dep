@@ -1,0 +1,1 @@
+matrix.dep matrix.o: matrix.cpp matrix.hpp vector.hpp

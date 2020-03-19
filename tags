@@ -1,0 +1,58 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GREEN	matrix.hpp	10;"	d
+MATRIX_HPP_	matrix.hpp	2;"	d
+OBJECTS	makefile	/^OBJECTS := $(patsubst %.cpp,%.o,$(SOURCES))$/;"	m
+RED	matrix.hpp	11;"	d
+RESET	matrix.hpp	12;"	d
+SOURCES	makefile	/^SOURCES := matrix.cpp vector.cpp main.cpp test.cpp$/;"	m
+TEST_HPP	test.hpp	2;"	d
+VECTOR_HPP_	vector.hpp	2;"	d
+YELLOW	matrix.hpp	9;"	d
+at	vector.hpp	/^	int at(size_t index)$/;"	f	class:vector
+begin	vector.hpp	/^	int * begin()$/;"	f	class:vector
+capacity	vector.hpp	/^	size_t capacity()$/;"	f	class:vector
+column	matrix.hpp	/^	size_t column;$/;"	m	struct:matrix
+current_state	test.cpp	/^void current_state(matrix & memorydump,$/;"	f
+data	matrix.hpp	/^	vector data;$/;"	m	struct:matrix
+draw_matrix_horiz_board	matrix.hpp	/^static void draw_matrix_horiz_board(const int & col)$/;"	f	struct:matrix
+draw_matrix_value	matrix.hpp	/^static	void draw_matrix_value(const int & value)  \/\/used without object$/;"	f	struct:matrix
+draw_matrix_vert_board	matrix.hpp	/^static void draw_matrix_vert_board(const int & row)$/;"	f	struct:matrix
+end	vector.hpp	/^	int * end()$/;"	f	class:vector
+erase	vector.hpp	/^	void erase(size_t index)$/;"	f	class:vector
+greeting	test.cpp	/^void greeting()$/;"	f
+handling	test.cpp	/^void handling( matrix & memorydump,$/;"	f
+init_registers	test.cpp	/^void init_registers( matrix & memorydump,$/;"	f
+insert	vector.hpp	/^	void insert(size_t index, int value)$/;"	f	class:vector
+loading	test.cpp	/^void loading(matrix & memdump)$/;"	f
+m_capacity	vector.hpp	/^	size_t m_capacity;$/;"	m	class:vector
+m_data	vector.hpp	/^	int * m_data;$/;"	m	class:vector
+m_size	vector.hpp	/^	size_t m_size;$/;"	m	class:vector
+main	main.cpp	/^int main()$/;"	f
+matrix	matrix.hpp	/^	matrix() $/;"	f	struct:matrix
+matrix	matrix.hpp	/^	matrix(const matrix & obj)$/;"	f	struct:matrix
+matrix	matrix.hpp	/^struct matrix{$/;"	s
+operator ()	matrix.hpp	/^	double  operator()(const size_t & r, const size_t & c)  $/;"	f	struct:matrix
+operator ()	matrix.hpp	/^	void operator()(size_t r, size_t c, double value)$/;"	f	struct:matrix
+operator *	matrix.hpp	/^	matrix operator*(const matrix & obj)$/;"	f	struct:matrix
+operator +	matrix.hpp	/^	matrix  operator+(const matrix & obj)$/;"	f	struct:matrix
+operator <<	matrix.hpp	/^	friend void operator<<(std::ostream & os, matrix & mat)$/;"	f	struct:matrix
+operator =	matrix.hpp	/^	matrix & operator=(const matrix & obj)$/;"	f	struct:matrix
+operator []	vector.hpp	/^	int operator[](const size_t & index) const$/;"	f	class:vector
+operator []	vector.hpp	/^	int operator[](size_t & index)$/;"	f	class:vector
+pop	vector.hpp	/^	void pop()$/;"	f	class:vector
+push_back	vector.hpp	/^	void push_back(int value )$/;"	f	class:vector
+resize	vector.hpp	/^	void resize()$/;"	f	class:vector
+row	matrix.hpp	/^	size_t row;$/;"	m	struct:matrix
+size	vector.hpp	/^	size_t size()$/;"	f	class:vector
+test_v1	test.cpp	/^void test_v1()$/;"	f
+test_v2	test.cpp	/^void test_v2()$/;"	f
+test_v3	test.cpp	/^void test_v3()$/;"	f
+vector	vector.hpp	/^	vector():$/;"	f	class:vector
+vector	vector.hpp	/^	vector(const vector & obj)$/;"	f	class:vector
+vector	vector.hpp	/^class vector{$/;"	c
+~vector	vector.hpp	/^	~vector()$/;"	f	class:vector

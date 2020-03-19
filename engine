@@ -1,0 +1,45 @@
+#!/bin/bash
+
+clear
+#echo Enter your programm name
+
+#read name
+
+#touch $name
+#name = main
+
+
+find . -type f ! -name "*.*" -exec mv {} {}.cpp \;
+
+rm $name
+mv engine.cpp engine
+touch makefile
+
+#into main.cpp
+echo "#include<iostream>" >> main.cpp
+echo '#include<cassert>' >> main.cpp
+echo '#define YELLOW "\033[01;033m"' >> main.cpp
+echo '#define GREEN "\033[01;032m"' >> main.cpp
+echo '#define RESET "\033[01;0m"' >> main.cpp
+echo " " >> main.cpp
+echo "int main()" >> main.cpp
+echo "{" >> main.cpp
+echo '	std::cout << GREEN; ' >> main.cpp
+echo '	std::cout <<  "take your time"  <<  std::endl; ' >> main.cpp
+echo '	std::cout << RESET; ' >> main.cpp
+echo "	return 0;" >> main.cpp
+echo "}" >> main.cpp
+
+#into makefile
+echo "all: comp run" >> makefile
+echo "comp:main.cpp" >> makefile
+echo "	clear" >> makefile 
+echo "	@g++ main.cpp -std=c++11 -o smd" >> makefile 
+echo " " >> makefile
+echo "run:" >> makefile 
+#clear >> makefile;
+echo "	@./smd" >> makefile
+echo "	@ctags -R ." >> makefile
+echo "clean:" >> makefile
+echo "	rm smd " >> makefile
+exec make
